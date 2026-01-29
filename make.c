@@ -16,7 +16,6 @@ int main(int argc, char **argv)
     cmd_append(&cmd, "-L./raylib-5.5_linux_amd64/lib/");
     cmd_append(&cmd, "-l:libraylib.a");
     cmd_append(&cmd, "-lm");
-    system("./main");
     if (!cmd_run(&cmd)) return 1;
     return 0;
 }
